@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A.SOLÍS // ctOS PROFILE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ░ AMBIENT LAYER ░ -->
+  <div class="ambient-layer" id="ambientLayer" aria-hidden="true"></div>
+
+  <!-- ░ GRID OVERLAY ░ -->
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <!-- ░ SCANLINE OVERLAY ░ -->
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <!-- ░ TOP NAV BAR ░ -->
+  <nav class="topbar" role="navigation">
+    <div class="topbar-left">
+      <span class="topbar-logo">ctOS</span>
+      <span class="topbar-sep">|</span>
+      <span class="topbar-id">CITIZEN_PROFILE_v4.1</span>
+    </div>
+    <div class="topbar-center">
+      <a href="#profile"   class="nav-link" data-glitch="PROFILE">PROFILE</a>
+      <a href="#experience" class="nav-link" data-glitch="EXPERIENCE">EXPERIENCE</a>
+      <a href="#skills"    class="nav-link" data-glitch="SKILLS">SKILLS</a>
+      <a href="#education" class="nav-link" data-glitch="EDUCATION">EDUCATION</a>
+      <a href="#contact"   class="nav-link" data-glitch="CONTACT">CONTACT</a>
+    </div>
+    <div class="topbar-right">
+      <span class="topbar-status">
+        <span class="pulse-dot"></span>ONLINE
+      </span>
+      <span class="topbar-sep">|</span>
+      <span class="topbar-tz">CST</span>
+    </div>
+  </nav>
+
+  <!-- ░ MAIN CONTENT ░ -->
+  <main class="site-main">
+
+    <!-- ══════════════════════════════════
+         HERO SECTION
+    ══════════════════════════════════ -->
+    <section class="hero" id="profile">
+      <div class="hero-inner">
+
+        <!-- Left panel: ID card -->
+        <div class="hero-id panel">
+          <div class="panel-corner tl"></div>
+          <div class="panel-corner tr"></div>
+          <div class="panel-corner bl"></div>
+          <div class="panel-corner br"></div>
+
+          <div class="panel-tag">// ID_RECORD</div>
+
+          <div class="id-avatar">
+            <div class="avatar-frame">
+              <div class="avatar-initials">AS</div>
+              <div class="avatar-scan"></div>
+            </div>
+            <div class="avatar-meta">
+              <span class="meta-row"><span class="meta-key">UID</span><span class="meta-val">ASO-7741</span></span>
+              <span class="meta-row"><span class="meta-key">CLR</span><span class="meta-val accent">GRANTED</span></span>
+              <span class="meta-row"><span class="meta-key">TZ </span><span class="meta-val">CST/UTC-6</span></span>
+            </div>
+          </div>
+
+          <div class="id-name-block">
+            <p class="id-label">SUBJECT_NAME</p>
+            <h1 class="id-name" id="typewriterTarget"></h1>
+            <p class="id-title">QA LEAD &amp; SOFTWARE ENGINEER</p>
+          </div>
+
+          <div class="id-bar"></div>
+
+          <p class="id-summary">
+            Engineer and quality assurance professional with a strong CS background.
+            Specialist in automated &amp; manual testing, codeless tooling, and building
+            high-coverage test strategies from scratch. Works across time zones.
+          </p>
+
+          <div class="id-actions">
+            <a href="mailto:resume@antoniosolismz.com" class="btn-ctos" data-glitch="CONTACT">
+              <span>INITIATE_CONTACT</span>
+            </a>
+            <a href="https://blog.antoniosolismz.com" target="_blank" rel="noopener" class="btn-ctos btn-ghost" data-glitch="BLOG">
+              <span>READ_BLOG</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right panel: stats dashboard -->
+        <div class="hero-stats">
+
+          <div class="stat-panel panel">
+            <div class="panel-corner tl"></div><div class="panel-corner tr"></div>
+            <div class="panel-corner bl"></div><div class="panel-corner br"></div>
+            <div class="panel-tag">// SYSTEM_STATUS</div>
+            <div class="stat-rows">
+              <div class="stat-row">
+                <span class="stat-label">AVAILABILITY</span>
+                <div class="stat-bar-wrap">
+                  <div class="stat-bar" style="--w:90%"></div>
+                </div>
+                <span class="stat-val accent">OPEN</span>
+              </div>
+              <div class="stat-row">
+                <span class="stat-label">EXPERIENCE</span>
+                <div class="stat-bar-wrap">
+                  <div class="stat-bar" style="--w:75%"></div>
+                </div>
+                <span class="stat-val">4+ YRS</span>
+              </div>
+              <div class="stat-row">
+                <span class="stat-label">TEST COVERAGE</span>
+                <div class="stat-bar-wrap">
+                  <div class="stat-bar" style="--w:82%"></div>
+                </div>
+                <span class="stat-val">80%+</span>
+              </div>
+              <div class="stat-row">
+                <span class="stat-label">AUTOMATION</span>
+                <div class="stat-bar-wrap">
+                  <div class="stat-bar" style="--w:88%"></div>
+                </div>
+                <span class="stat-val">HIGH</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="intel-panel panel">
+            <div class="panel-corner tl"></div><div class="panel-corner tr"></div>
+            <div class="panel-corner bl"></div><div class="panel-corner br"></div>
+            <div class="panel-tag">// INTEL_FEED</div>
+            <ul class="intel-list" id="intelList">
+              <li><span class="intel-time">00:00:01</span> Profile scan complete</li>
+              <li><span class="intel-time">00:00:02</span> 3 positions on record</li>
+              <li><span class="intel-time">00:00:03</span> Test coverage: 80%+</li>
+              <li><span class="intel-time">00:00:04</span> Location: CST timezone</li>
+              <li><span class="intel-time">00:00:05</span> Languages: EN / ES</li>
+              <li><span class="intel-time">00:00:06</span> Status: <span class="accent">AVAILABLE</span></li>
+            </ul>
+          </div>
+
+          <div class="hex-panel panel">
+            <div class="panel-corner tl"></div><div class="panel-corner tr"></div>
+            <div class="panel-corner bl"></div><div class="panel-corner br"></div>
+            <div class="panel-tag">// SIGNAL_TRACE</div>
+            <div class="hex-stream" id="hexStream"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         EXPERIENCE SECTION
+    ══════════════════════════════════ -->
+    <section class="section-block" id="experience">
+      <div class="section-header-row">
+        <div class="sh-line"></div>
+        <h2 class="sh-title">EMPLOYMENT_RECORD</h2>
+        <div class="sh-line"></div>
+      </div>
+
+      <div class="experience-grid">
+
+        <article class="exp-card panel">
+          <div class="panel-corner tl"></div><div class="panel-corner tr"></div>
+          <div class="panel-corner bl"></div><div class="panel-corner br"></div>
+          <div class="exp-header">
+            <div>
+              <h3 class="exp-role">QA LEAD</h3>
+              <span class="exp-company">SIEMENS</span>
+            </div>
+            <div class="exp-date-block">
+              <span class="exp-date">AUG 2023</span>
+              <span class="exp-date-sep">→</span>
+              <span class="exp-date accent">PRESENT</span>
+            </div>
+          </div>
+          <div class="exp-divider"></div>
+          <ul class="exp-list">
+            <li>Built QA process for Salesforce change requests — coverage 0% → 80%+ in 6 months</li>
+            <li>Led distributed QA team across multiple time zones</li>
+            <li>Grew team's visibility until management created a dedicated QA branch</li>
+            <li>Authored test cases for ISO compliance, demos, and sprint documentation</li>
+            <li>Automated manual cases using ACCELQ (codeless); built metric dashboards</li>
+          </ul>
+          <div class="exp-tags">
+            <span class="etag">SALESFORCE</span>
+            <span class="etag">ACCELQ</span>
+            <span class="etag">LEADERSHIP</span>
+            <span class="etag">ISO</span>
+          </div>
+        </article>
+
+        <article class="exp-card panel">
+          <div class="panel-corner tl"></div><div class="panel-corner tr"></div>
+          <div class="panel-corner bl"></div><div class="panel-corner br"></div>
+          <div class="exp-header">
+            <div>
+              <h3 class="exp-role">SDET</h3>
+              <span class="exp-company">ATOS</span>
+            </div>
+            <div class="exp-date-block">
+              <span class="exp-date">AUG 2022</span>
+              <span class="exp-date-sep">→</span>
+              <span class="exp-date">AUG 2023</span>
+            </div>
+          </div>
+          <div class="exp-divider"></div>
+          <ul class="exp-list">
+            <li>Automated Java/Selenium test cases; built regression suite from scratch</li>
+            <li>Reduced technical debt in test framework, improved execution speed</li>
+            <li>Performed functional testing alongside devs and business analysts</li>
+            <li>Covered Salesforce (all clouds), web apps, APIs, and system integrations</li>
+          </ul>
+          <div class="exp-tags">
+            <span class="etag">JAVA</span>
+            <span class="etag">SELENIUM</span>
+            <span class="etag">API TESTING</span>
+            <span class="etag">SALESFORCE</span>
+          </div>
+        </article>
+
+        <article class="exp-card panel">
+          <div class="panel-corner tl"></div><div class="panel-corner tr"></div>
+          <div class="panel-corner bl"></div><div class="panel-corner br"></div>
+          <div class="exp-header">
+            <div>
+              <h3 class="exp-role">AUTOMATION ENGINEER</h3>
+              <span class="exp-company">VOLKSWAGEN</span>
+            </div>
+            <div class="exp-date-block">
+              <span class="exp-date">AUG 2021</span>
+              <span class="exp-date-sep">→</span>
+              <span class="exp-date">FEB 2022</span>
+            </div>
+          </div>
+          <div class="exp-divider"></div>
+          <ul class="exp-list">
+            <li>Built Excel macros automating weekly reports for technical development</li>
+            <li>Aggregated data from Excel, web dashboards, and APIs for reporting pipeline</li>
+          </ul>
+          <div class="exp-tags">
+            <span class="etag">EXCEL VBA</span>
+            <span class="etag">DATA PROCESSING</span>
+            <span class="etag">REPORTING</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         SKILLS SECTION
+    ══════════════════════════════════ -->
+    <section class="section-block" id="skills">
+      <div class="section-header-row">
+        <div class="sh-line"></div>
+        <h2 class="sh-title">CAPABILITY_MATRIX</h2>
+        <div class="sh-line"></div>
+      </div>
+
+      <div class="skills-outer">
+
+        <div class="skill-group panel">
+          <div class="panel-corner tl"></div><div class="panel-corner tr"></div>
+          <div class="panel-corner bl"></div><div class="panel-corner br"></div>
+          <div class="panel-tag">// LANGUAGES</div>
+          <div class="skill-chips">
+            <span class="chip chip-hi">JAVA</span>
+            <span class="chip chip-hi">PYTHON</span>
+            <span class="chip chip-hi">JAVASCRIPT</span>
+            <span class="chip chip-hi">TYPESCRIPT</span>
+            <span class="chip">C#</span>
+          </div>
+        </div>
+
+        <div class="skill-group panel">
+          <div class="panel-corner tl"></div><div class="panel-corner tr"></div>
+          <div class="panel-corner bl"></div><div class="panel-corner br"></div>
+          <div class="panel-tag">// AUTOMATION</div>
+          <div class="skill-chips">
+            <span class="chip chip-hi">PLAYWRIGHT</span>
+            <span class="chip chip-hi">SELENIUM</span>
+            <span class="chip chip-hi">APPIUM</span>
+            <span class="chip">TESTIM</span>
+            <span class="chip">ACCELQ</span>
+            <span class="chip">SELENIUM IDE</span>
+          </div>
+        </div>
+
+        <div class="skill-group panel">
+          <div class="panel-corner tl"></div><div class="panel-corner tr"></div>
+          <div class="panel-corner bl"></div><div class="panel-corner br"></div>
+          <div class="panel-tag">// TESTING</div>
+          <div class="skill-chips">
+            <span class="chip chip-hi">API TESTING</span>
+            <span class="chip chip-hi">FUNCTIONAL</span>
+            <span class="chip chip-hi">AUTOMATED</span>
+            <span class="chip">PERFORMANCE</span>
+            <span class="chip">MANUAL</span>
+            <span class="chip">HYBRID</span>
+          </div>
+        </div>
+
+        <div class="skill-group panel">
+          <div class="panel-corner tl"></div><div class="panel-corner tr"></div>
+          <div class="panel-corner bl"></div><div class="panel-corner br"></div>
+          <div class="panel-tag">// DEVTOOLS</div>
+          <div class="skill-chips">
+            <span class="chip chip-hi">GIT</span>
+            <span class="chip chip-hi">DOCKER</span>
+            <span class="chip chip-hi">POSTMAN</span>
+            <span class="chip chip-hi">JENKINS</span>
+            <span class="chip">CI/CD</span>
+            <span class="chip">JIRA</span>
+            <span class="chip">LINUX</span>
+            <span class="chip">SQL</span>
+            <span class="chip">PROXMOX</span>
+          </div>
+        </div>
+
+        <div class="skill-group panel">
+          <div class="panel-corner tl"></div><div class="panel-corner tr"></div>
+          <div class="panel-corner bl"></div><div class="panel-corner br"></div>
+          <div class="panel-tag">// CLOUD &amp; PLATFORMS</div>
+          <div class="skill-chips">
+            <span class="chip chip-hi">AWS</span>
+            <span class="chip chip-hi">SALESFORCE</span>
+            <span class="chip">ORACLE CLOUD</span>
+            <span class="chip">AZURE DEVOPS</span>
+          </div>
+        </div>
+
+        <div class="skill-group panel">
+          <div class="panel-corner tl"></div><div class="panel-corner tr"></div>
+          <div class="panel-corner bl"></div><div class="panel-corner br"></div>
+          <div class="panel-tag">// FRAMEWORKS</div>
+          <div class="skill-chips">
+            <span class="chip chip-hi">JUNIT 5</span>
+            <span class="chip chip-hi">MOCKITO</span>
+            <span class="chip">SPECFLOW</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         EDUCATION SECTION
+    ══════════════════════════════════ -->
+    <section class="section-block" id="education">
+      <div class="section-header-row">
+        <div class="sh-line"></div>
+        <h2 class="sh-title">ACADEMIC_RECORD</h2>
+        <div class="sh-line"></div>
+      </div>
+
+      <div class="edu-grid">
+
+        <div class="edu-card panel">
+          <div class="panel-corner tl"></div><div class="panel-corner tr"></div>
+          <div class="panel-corner bl"></div><div class="panel-corner br"></div>
+          <div class="edu-icon">◈</div>
+          <div class="edu-body">
+            <h3 class="edu-degree">COMPUTER SYSTEMS ENGINEERING</h3>
+            <p class="edu-school">UDLAP — Universidad de las Américas Puebla</p>
+            <p class="edu-year">CLASS OF 2022</p>
+            <div class="edu-honors">
+              <span class="honor-badge">CUM LAUDE</span>
+              <span class="honor-badge">GPA 9.6 / 10</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-card panel">
+          <div class="panel-corner tl"></div><div class="panel-corner tr"></div>
+          <div class="panel-corner bl"></div><div class="panel-corner br"></div>
+          <div class="edu-icon">◉</div>
+          <div class="edu-body">
+            <h3 class="edu-degree">LANGUAGE CERTS</h3>
+            <p class="edu-school">English — Advanced</p>
+            <div class="edu-honors">
+              <span class="honor-badge">B2 FIRST — CAMBRIDGE</span>
+              <span class="honor-badge">C2 — DUOLINGO</span>
+            </div>
+            <p class="edu-school" style="margin-top:0.5rem">Spanish — Native</p>
+          </div>
+        </div>
+
+        <div class="edu-card panel">
+          <div class="panel-corner tl"></div><div class="panel-corner tr"></div>
+          <div class="panel-corner bl"></div><div class="panel-corner br"></div>
+          <div class="edu-icon">◇</div>
+          <div class="edu-body">
+            <h3 class="edu-degree">SOFT SKILLS</h3>
+            <div class="edu-honors" style="margin-top:0.5rem">
+              <span class="honor-badge">LEADERSHIP</span>
+              <span class="honor-badge">FAST LEARNER</span>
+              <span class="honor-badge">ADAPTABILITY</span>
+              <span class="honor-badge">SCRUM / AGILE</span>
+              <span class="honor-badge">PROBLEM SOLVING</span>
+              <span class="honor-badge">COMMUNICATION</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         CONTACT SECTION
+    ══════════════════════════════════ -->
+    <section class="section-block" id="contact">
+      <div class="section-header-row">
+        <div class="sh-line"></div>
+        <h2 class="sh-title">COMMUNICATION_CHANNELS</h2>
+        <div class="sh-line"></div>
+      </div>
+
+      <div class="contact-grid">
+        <a href="mailto:resume@antoniosolismz.com" class="contact-tile panel" data-glitch="EMAIL">
+          <div class="panel-corner tl"></div><div class="panel-corner tr"></div>
+          <div class="panel-corner bl"></div><div class="panel-corner br"></div>
+          <span class="ct-icon">✉</span>
+          <span class="ct-label">EMAIL</span>
+          <span class="ct-sub">resume@antoniosolismz.com</span>
+        </a>
+        <a href="https://github.com/antoniosolismz" target="_blank" rel="noopener" class="contact-tile panel" data-glitch="GITHUB">
+          <div class="panel-corner tl"></div><div class="panel-corner tr"></div>
+          <div class="panel-corner bl"></div><div class="panel-corner br"></div>
+          <span class="ct-icon">⌥</span>
+          <span class="ct-label">GITHUB</span>
+          <span class="ct-sub">github.com/antoniosolismz</span>
+        </a>
+        <a href="https://linkedin.com/in/antoniosolismz" target="_blank" rel="noopener" class="contact-tile panel" data-glitch="LINKEDIN">
+          <div class="panel-corner tl"></div><div class="panel-corner tr"></div>
+          <div class="panel-corner bl"></div><div class="panel-corner br"></div>
+          <span class="ct-icon">◈</span>
+          <span class="ct-label">LINKEDIN</span>
+          <span class="ct-sub">linkedin.com/in/antoniosolismz</span>
+        </a>
+        <a href="https://blog.antoniosolismz.com" target="_blank" rel="noopener" class="contact-tile panel" data-glitch="BLOG">
+          <div class="panel-corner tl"></div><div class="panel-corner tr"></div>
+          <div class="panel-corner bl"></div><div class="panel-corner br"></div>
+          <span class="ct-icon">◉</span>
+          <span class="ct-label">BLOG</span>
+          <span class="ct-sub">blog.antoniosolismz.com</span>
+        </a>
+        <a href="https://antoniosolismz.com" target="_blank" rel="noopener" class="contact-tile panel" data-glitch="PORTFOLIO">
+          <div class="panel-corner tl"></div><div class="panel-corner tr"></div>
+          <div class="panel-corner bl"></div><div class="panel-corner br"></div>
+          <span class="ct-icon">◇</span>
+          <span class="ct-label">PORTFOLIO</span>
+          <span class="ct-sub">antoniosolismz.com</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ░ FOOTER ░ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="footer-brand">ctOS // A.SOLÍS</span>
+      <span class="footer-sep">|</span>
+      <span class="footer-copy">© 2026 ANTONIO SOLÍS</span>
+      <span class="footer-sep">|</span>
+      <span class="footer-build" id="footerBuild"></span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
