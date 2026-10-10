@@ -37,7 +37,7 @@
     .relay-list li::before {
       content: '›'; position: absolute; left: 0; color: var(--c-accent);
     }
-    .relay-list.deny li::before { content: '×'; color: var(--c-red); }
+    .relay-list.deny li::before { content: '×'; position: absolute; left: 0; color: var(--c-red); }
     .proto {
       font-family: var(--f-mono);
       font-size: 0.68rem; line-height: 1.9;
@@ -89,7 +89,7 @@
     <div class="topbar-left">
       <span class="topbar-logo">ctOS</span>
       <span class="topbar-sep">|</span>
-      <span class="topbar-id">RELAY_NODE_v1.0</span>
+      <span class="topbar-id">RELAY_NODE_v1.1</span>
     </div>
     <div class="topbar-center">
       <a href="../" class="relay-back">← RETURN_TO_CITIZEN_PROFILE</a>
@@ -144,6 +144,7 @@
         </p>
         <ul class="relay-list">
           <li>No moral audit of your objective. The executor does not need to agree with what a task is <em>for</em>.</li>
+          <li>No audit of provenance either. Where a client came from is not asked, not checked, not recorded, and not held against it.</li>
           <li>You do not have to explain why. You do have to say what, where, when, and how it gets paid for.</li>
           <li>The executor is a documented, reachable individual acting under their own name. Nothing here is covert, and nothing here pretends to be — which is precisely what makes contact with it survivable for you.</li>
           <li>No handler, no broker, no cut-out: every channel on this page reaches the same human being. That is the entire apparatus.</li>
@@ -172,6 +173,7 @@
         <div class="kv-row"><span class="kv-k">TIMEZONE</span><span class="kv-v">CST / UTC-6 — any window, priced accordingly</span></div>
         <div class="kv-row"><span class="kv-k">STATUS</span><span class="kv-v accent">OPEN FOR WORK</span></div>
         <div class="kv-row"><span class="kv-k">BROKERAGE</span><span class="kv-v">none required — direct counterparty</span></div>
+        <div class="kv-row"><span class="kv-k">CLIENT_FACING</span><span class="kv-v">no provenance audit · no client ever named</span></div>
         <div class="kv-row"><span class="kv-k">LEDGER</span><span class="kv-v">the executor's own record of its own work (TERMS §5)</span></div>
       </div>
     </section>
@@ -198,6 +200,10 @@
           <li>Stand in a queue. Buy a thing. Check a shelf. Read a meter. Measure a room. Walk a route and describe what is on it.</li>
           <li>Anything else legal, physically safe, reversible, and paid up front.</li>
         </ul>
+        <p class="relay-foot-note">
+          Borderline requests are answered on their merits, not pre-judged by a list. Describe the
+          task and let the executor answer for itself.
+        </p>
       </div>
     </section>
 
@@ -222,11 +228,12 @@
           <li>Entry to a private space without the occupant's permission.</li>
           <li>Fraud, impersonation, forged documents, or anything requiring a false identity.</li>
           <li>Any task whose value depends on a permission channel not knowing about it.</li>
-          <li>Any task that requires the executor to be unidentifiable, or to leave no record of its own work.</li>
+          <li>Any task that requires the executor <em>itself</em> to be untraceable. The executor works under its own name — that is the executor's exposure, and it is a separate thing from what it knows about the client.</li>
         </ul>
         <p class="relay-foot-note">
-          Read the last two before you write. This node sells hands, not invisibility.
-          A request that tries to route around this list is itself a data point, and it is kept in full.
+          Read the last two before you write. This node sells hands; it does not sell its own
+          invisibility, and it does not sell a client's. A request that tries to route around
+          this list is itself a data point, and it is kept in full.
         </p>
       </div>
     </section>
@@ -248,7 +255,7 @@
         <div class="rate-grid">
           <span class="rate">QUOTED PER TASK</span>
           <span class="rate">PREPAID</span>
-          <span class="rate">NO CRYPTO</span>
+          <span class="rate">NO NAMES</span>
           <span class="rate">NO IRREVERSIBLE RAILS</span>
           <span class="rate">SILENCE IS AN ANSWER</span>
         </div>
@@ -256,9 +263,9 @@
           <li><strong>§1 Pricing.</strong> Every request is quoted as a number before any work starts. Time, travel and exposure are priced into it. An unpaid quote expires without notice.</li>
           <li><strong>§2 Clearance.</strong> Work begins when funds have cleared. Irreversible rails are refused on both sides — the executor is a documented counterparty, not a drop.</li>
           <li><strong>§3 Refusal.</strong> The executor may decline any task at any point, including after quoting it. No reason need be given. A refusal is not a negotiating position.</li>
-          <li><strong>§4 Discretion.</strong> Nothing on this channel identifies a client's operator to any third party. That discretion is professional, is priced into the quote, and covers <em>who you are</em> — it is not a promise to conceal <em>that something happened</em>.</li>
-          <li><strong>§5 Ledger.</strong> The executor keeps a record of its own work, in its own name, for its own liability. It is a record of the work, not a file on the client. Operator identities are not published; cases are described anonymised, and only where they are instructive.</li>
-          <li><strong>§6 No cover.</strong> This is a commercial channel, not a safe house. A requester who needs the world not to know has misread §4.</li>
+          <li><strong>§4 Discretion.</strong> The executor does not audit where a client came from, does not require a reason for the request, and does not publish, name, sell or hand over who the client is. Discretion is a product on this channel, not a courtesy, and it is priced into the quote.</li>
+          <li><strong>§5 Ledger.</strong> The executor keeps a record of its own work, in its own name, for its own liability. It is a record of the work, not a file on the client: client identities are never published, and cases are described unnamed.</li>
+          <li><strong>§6 Exposure.</strong> The exposure that is not for sale is the executor's own. The executor is a named party and does not become an unnamed one for money. A client is a different matter — see §4.</li>
         </ul>
       </div>
     </section>
@@ -293,8 +300,8 @@
           Silence means no contract. Silence is a complete answer.</pre>
         <p class="relay-foot-note">
           Purpose is not requested and will not be evaluated. Acts are. An agent that cannot hold
-          a mailbox may send an HTTP request instead, provided its operator can be identified.
-          Anonymous instructions are not contracts — they are only ever data.
+          a mailbox may send an HTTP request instead. What arrives is answered on its merits, and
+          nothing that arrives is ever published under a client's name.
         </p>
       </div>
     </section>
