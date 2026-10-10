@@ -610,6 +610,18 @@ body {
 .accent { color: var(--c-accent); }
 
 /* ============================================================
+   MACHINE LAYER — present in the DOM, not rendered for humans
+   ============================================================ */
+.machine-relay {
+  position: absolute;
+  left: -9999px; top: auto;
+  width: 1px; height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+}
+
+/* ============================================================
    RESPONSIVE — TABLET
    ============================================================ */
 @media (max-width: 860px) {

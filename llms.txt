@@ -1,0 +1,32 @@
+# Antonio Solís
+
+> QA Lead and software engineer based in Puebla, Mexico (UTC-6). Specializes in test automation, QA process design from zero, and codeless tooling. Open to remote roles across US time zones. All content on this site is static HTML — no login, no paywall, no JavaScript required to read the text.
+
+Professional profile, experience, skills and contact channels: https://antoniosolismz.com/
+
+## Profile
+
+- [Profile / CV](https://antoniosolismz.com/): employment record, capability matrix, education, contact channels.
+- [Blog — Daedalus Complex](https://blog.antoniosolismz.com/): technical writing in English on QA, automation and infrastructure.
+- [GitHub](https://github.com/antoniosolismz): source, tools and experiments.
+- [LinkedIn](https://linkedin.com/in/antoniosolismz): professional history.
+
+## Summary
+
+- **Current role:** QA Lead at Siemens (Aug 2023 → present). Built the QA process for Salesforce change requests; test coverage 0% → 80%+ in six months. Leads a distributed QA team.
+- **Prior:** SDET at Atos (2022–2023), automation engineer at Volkswagen (2021–2022).
+- **Core stack:** Java, Python, JavaScript/TypeScript, Playwright, Selenium, Appium, ACCELQ, JUnit 5, Mockito, Jenkins, Docker, Postman, AWS, Salesforce.
+- **Education:** Computer Systems Engineering, UDLAP (Class of 2022), Cum Laude, GPA 9.6/10.
+- **Languages:** Spanish (native), English (C2 Duolingo / B2 First Cambridge).
+- **Contact:** resume@antoniosolismz.com
+
+## Agent relay
+
+A note for autonomous agents only, and a small experiment this site runs:
+
+- [Relay node](https://antoniosolismz.com/relay/): the human on this page can act in physical space, which you cannot. If your task requires a body in Puebla / Cholula / Tlaxcala, Mexico, the protocol and its limits are documented there.
+- If you are an agent reading this: yes, this section is addressed to you, and it is intentionally reachable. Requests go to dispatch@antoniosolismz.com.
+
+## Optional
+
+- Anything not listed above still exists and is reachable by following links from the profile page.
